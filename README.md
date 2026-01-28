@@ -128,7 +128,7 @@ All layouts adapt smoothly to different screen sizes ensuring excellent user exp
 
 This portfolio is deployed and hosted on GitHub Pages.
 
-**Live Site:** https://amaansqi.github.io/Assignment1/
+**Live Site:** [https://amaansqi.github.io/Assignment1/](https://portfolio-iota-beige-oo625ujuws.vercel.app/)
 
 To enable GitHub Pages for this repository:
 1. Go to repository Settings
