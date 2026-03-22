@@ -1,59 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Amaan Siddiqui</title>
+  <title>Contact — Amaan Siddiqui</title>
+  <meta name="description"
+    content="Get in touch with Amaan Siddiqui for project collaborations, opportunities, or conversations." />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
+  <!-- NAVBAR -->
   <header class="navbar">
-    <div class="container nav-flex">
-      <h2 class="logo">Amaan.</h2>
-      <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Amaan<span>.</span></a>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="section container">
-    <h1 class="section-title">Contact Me</h1>
-
-    <form class="card" action="#" method="post">
-      <div style="margin-bottom: 1rem;">
-        <label>Name</label><br />
-        <input type="text" required style="width:100%; padding:8px; border:3px solid #000000;">
-      </div>
-
-      <div style="margin-bottom: 1rem;">
-        <label>Email</label><br />
-        <input type="email" required style="width:100%; padding:8px; border:3px solid #000000;">
-      </div>
-
-      <div style="margin-bottom: 1rem;">
-        <label>Message</label><br />
-        <textarea rows="5" required style="width:100%; padding:8px; border:3px solid #000000;"></textarea>
-      </div>
-
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Say Hello</span>
+      <h1 class="page-header-title">Contact</h1>
+      <p class="page-header-sub">Open for opportunities, collaborations, and interesting conversations.</p>
+    </div>
+    <div class="ghost-text ghost-text--right" aria-hidden="true">HELLO</div>
   </section>
 
+  <!-- CONTACT FORM -->
+  <section class="section section--no-border">
+    <div class="container">
+      <div class="contact-grid reveal">
+
+        <!-- Left — Info -->
+        <div>
+          <div class="contact-info-block">
+            <div class="contact-info-label">GitHub</div>
+            <div class="contact-info-value">
+              <a href="https://github.com/amaansqi" target="_blank" rel="noopener">github.com/amaansqi</a>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="contact-info-label">LinkedIn</div>
+            <div class="contact-info-value">
+              <a href="https://www.linkedin.com/in/amaansqi/" target="_blank"
+                rel="noopener">linkedin.com/in/amaansqi</a>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="contact-info-label">Location</div>
+            <div class="contact-info-value">India</div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="contact-info-label">Availability</div>
+            <div class="contact-info-value">Open to opportunities</div>
+          </div>
+        </div>
+
+        <!-- Right — Form -->
+        <div>
+          <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="What's on your mind?"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Send Message →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-flex">
-      <p>© 2026 Amaan Siddiqui</p>
-      <div class="socials">
-        <a href="https://github.com/amaansqi">GitHub</a>
-        <a href="https://www.linkedin.com/in/amaansqi/">LinkedIn</a>
+    <div class="container footer-inner">
+      <span class="footer-copy">© 2026 Amaan Siddiqui</span>
+      <div class="footer-links">
+        <a href="https://github.com/amaansqi" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/amaansqi/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
+
 </html>

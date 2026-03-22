@@ -1,67 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Amaan Siddiqui</title>
+  <title>About — Amaan Siddiqui</title>
+  <meta name="description"
+    content="Learn about Amaan Siddiqui — a B.Tech CS student specializing in Cloud Computing with a focus on full-stack web development." />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
+  <!-- NAVBAR -->
   <header class="navbar">
-    <div class="container nav-flex">
-      <h2 class="logo">Amaan.</h2>
-      <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Amaan<span>.</span></a>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html" class="active">About</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="section container">
-    <h1 class="section-title">About Me</h1>
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Who I Am</span>
+      <h1 class="page-header-title">About Me</h1>
+      <p class="page-header-sub">Computer science student with a passion for building things that work.</p>
+    </div>
+    <div class="ghost-text ghost-text--right" aria-hidden="true">ABOUT</div>
+  </section>
 
-    <div class="card">
-      <p>
-        I am a Computer Science Engineering student passionate about web development and problem solving.
-        I enjoy building clean, responsive websites using HTML, CSS, and JavaScript.
-      </p>
+  <!-- BIO -->
+  <section class="section" id="bio">
+    <div class="container">
+      <div class="bio-grid reveal">
+        <div class="bio-text">
+          <p>
+            I am Amaan Siddiqui, a 6th semester B.Tech Computer Science and Engineering student specializing in Cloud
+            Computing at Lovely Professional University. I have a strong interest in full-stack web development and am
+            currently building my skills in the MERN stack, with a focus on creating scalable, efficient, and
+            user-friendly applications.
+          </p>
+          <p>
+            I enjoy exploring the depths of computers and technology, constantly learning how systems work and how
+            software can be used to solve real-world problems. Through hands-on learning, I have worked on projects such
+            as MERN-based applications and practical development tasks that have helped me strengthen my understanding
+            of modern web technologies.
+          </p>
+          <p>
+            I am passionate about problem-solving, continuous improvement, and applying my knowledge to build meaningful
+            digital solutions. My career goal is to grow into a skilled full-stack developer and contribute to
+            innovative and impactful projects.
+          </p>
+          <p>
+            Beyond academics and technology, I actively engage in sports such as football and running, which help me
+            develop discipline, teamwork, consistency, and maintain a balanced lifestyle.
+          </p>
+        </div>
 
-      <p style="margin-top: 1rem;">
-        Currently, I am improving my frontend skills and learning modern development workflows using Git and GitHub.
-      </p>
+        <div class="bio-sidebar">
+          <div class="bio-sidebar-item">
+            <div class="bio-sidebar-label">Program</div>
+            <div class="bio-sidebar-value">B.Tech CSE — Cloud Computing</div>
+          </div>
+          <div class="bio-sidebar-item">
+            <div class="bio-sidebar-label">University</div>
+            <div class="bio-sidebar-value">Lovely Professional University</div>
+          </div>
+          <div class="bio-sidebar-item">
+            <div class="bio-sidebar-label">Semester</div>
+            <div class="bio-sidebar-value">6th (2023–2027)</div>
+          </div>
+          <div class="bio-sidebar-item">
+            <div class="bio-sidebar-label">Focus</div>
+            <div class="bio-sidebar-value">MERN Stack · Full-Stack Development</div>
+          </div>
+          <div class="bio-sidebar-item">
+            <div class="bio-sidebar-label">Interests</div>
+            <div class="bio-sidebar-value">Football · Running</div>
+          </div>
+          <div class="bio-sidebar-item">
+            <div class="bio-sidebar-label">GitHub</div>
+            <div class="bio-sidebar-value"><a href="https://github.com/amaansqi" target="_blank"
+                rel="noopener">amaansqi</a></div>
+          </div>
+          <div class="bio-sidebar-item">
+            <div class="bio-sidebar-label">LinkedIn</div>
+            <div class="bio-sidebar-value"><a href="https://www.linkedin.com/in/amaansqi/" target="_blank"
+                rel="noopener">Amaan Siddiqui</a></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section container">
-    <h2 class="section-title">Education</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>B.Tech in Computer Science</h3>
-        <p>2023 – 2027</p>
+  <!-- CERTIFICATIONS GALLERY -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Verified Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">7 Coursera certifications in networking, hardware, and systems.</p>
       </div>
 
-      <div class="card">
-        <h3>Core Subjects</h3>
-        <p>Data Structures, Algorithms, Operating Systems, DBMS</p>
+      <div class="cert-gallery reveal">
+
+        <div class="cert-card">
+          <div class="cert-card-number" aria-hidden="true">01</div>
+          <h3 class="cert-card-name">Fundamentals of Network Communication</h3>
+          <span class="cert-card-issuer">Coursera</span>
+          <div class="cert-card-actions">
+            <a href="assets/certificates/Fundamentals of Network Communication.pdf" target="_blank"
+              class="btn-ghost">View PDF →</a>
+            <a href="https://coursera.org/share/acd79cf4f575069c95d52b7f79191490" target="_blank" rel="noopener"
+              class="btn-ghost">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-card-number" aria-hidden="true">02</div>
+          <h3 class="cert-card-name">Peer-to-Peer Protocols and Local Area Networks</h3>
+          <span class="cert-card-issuer">Coursera</span>
+          <div class="cert-card-actions">
+            <a href="assets/certificates/Peer-to-Peer Protocols and Local Area Networks.pdf" target="_blank"
+              class="btn-ghost">View PDF →</a>
+            <a href="https://coursera.org/share/ebc797655a2d8eecd7e57bf9a265e7ec" target="_blank" rel="noopener"
+              class="btn-ghost">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-card-number" aria-hidden="true">03</div>
+          <h3 class="cert-card-name">Packet Switching Networks and Algorithms</h3>
+          <span class="cert-card-issuer">Coursera</span>
+          <div class="cert-card-actions">
+            <a href="assets/certificates/Packet Switching Networks and Algorithms.pdf" target="_blank"
+              class="btn-ghost">View PDF →</a>
+            <a href="https://coursera.org/share/c355f91c86e8688ce254f8520654fd49" target="_blank" rel="noopener"
+              class="btn-ghost">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-card-number" aria-hidden="true">04</div>
+          <h3 class="cert-card-name">TCP/IP and Advanced Topics</h3>
+          <span class="cert-card-issuer">Coursera</span>
+          <div class="cert-card-actions">
+            <a href="assets/certificates/TCP-IP and Advanced Topics.pdf" target="_blank" class="btn-ghost">View PDF
+              →</a>
+            <a href="https://coursera.org/share/3d0606a3e23868c92ec48d05ee1e12f9" target="_blank" rel="noopener"
+              class="btn-ghost">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-card-number" aria-hidden="true">05</div>
+          <h3 class="cert-card-name">The Bits and Bytes of Computer Networking</h3>
+          <span class="cert-card-issuer">Coursera</span>
+          <div class="cert-card-actions">
+            <a href="assets/certificates/The Bits and Bytes of Computer Networking.pdf" target="_blank"
+              class="btn-ghost">View PDF →</a>
+            <a href="https://coursera.org/share/7d94a5785d9e078c133d38093d73fb49" target="_blank" rel="noopener"
+              class="btn-ghost">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-card-number" aria-hidden="true">06</div>
+          <h3 class="cert-card-name">Introduction to Hardware and Operating Systems</h3>
+          <span class="cert-card-issuer">Coursera</span>
+          <div class="cert-card-actions">
+            <a href="assets/certificates/Introduction to Hardware and Operating Systems.pdf" target="_blank"
+              class="btn-ghost">View PDF →</a>
+            <a href="https://coursera.org/share/d71d1db1d5c781ab669c5911bb7a2a27" target="_blank" rel="noopener"
+              class="btn-ghost">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-card-number" aria-hidden="true">07</div>
+          <h3 class="cert-card-name">Computer Communications</h3>
+          <span class="cert-card-issuer">Coursera</span>
+          <div class="cert-card-actions">
+            <a href="assets/certificates/Computer Communication.pdf" target="_blank" class="btn-ghost">View PDF →</a>
+            <a href="https://coursera.org/share/80cc0d24620c51e2634534c790dc6c47" target="_blank" rel="noopener"
+              class="btn-ghost">Verify ↗</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <!-- CTA -->
+  <section class="section section--inverted section--no-border">
+    <div class="container cta-band reveal">
+      <h2 class="cta-heading">Want to work<br />together?</h2>
+      <p class="cta-sub">I'm always open to new opportunities and collaborations.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn-primary">Contact Me →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-flex">
-      <p>© 2026 Amaan Siddiqui</p>
-            <div class="socials">
-        <a href="https://github.com/amaansqi">GitHub</a>
-        <a href="https://www.linkedin.com/in/amaansqi/">LinkedIn</a>
+    <div class="container footer-inner">
+      <span class="footer-copy">© 2026 Amaan Siddiqui</span>
+      <div class="footer-links">
+        <a href="https://github.com/amaansqi" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/amaansqi/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
+
 </html>
